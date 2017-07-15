@@ -1,8 +1,9 @@
-﻿{
-  "contact_id": 4,
-  "fName": "Gevorg",
-  "lName": "Smbatyan",
-  "phone": "+374 93 748429",
-  "notes": " note 5 ",
-  "image": "http://www.flaticon.com/premium-icon/icons/svg/476/476972.svg"
+{
+      "contact_id": 4,
+      "fName": "Gevorg",
+      "lName": "Smbatyan",
+      "email": "gevorgsmbatyan@gmail.com",
+      "phone": "+374 93 748429",
+      "notes": " note 5 ",
+      "image": "http://www.flaticon.com/premium-icon/icons/svg/476/476972.svg"
 }
