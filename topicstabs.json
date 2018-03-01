@@ -1,0 +1,48 @@
+{
+  "topics_tabs": [
+    {
+      "topics_tab_id": 1,
+      "name": "Basics"
+    },
+    {
+      "topics_tab_id": 2,
+      "name": "Control Statements"
+    },
+    {
+      "topics_tab_id": 3,
+      "name": "Strings"
+    },
+    {
+      "topics_tab_id": 4,
+      "name": "OOP"
+    },
+    {
+      "topics_tab_id": 5,
+      "name": "Collections"
+    },
+    {
+      "topics_tab_id": 6,
+      "name": "Generics"
+    },
+    {
+      "topics_tab_id": 7,
+      "name": "Input/Output"
+    },
+    {
+      "topics_tab_id": 8,
+      "name": "Exceptions"
+    },
+    {
+      "topics_tab_id": 9,
+      "name": "Multithreading"
+    },
+    {
+      "topics_tab_id": 10,
+      "name": "java.lang"
+    },
+    {
+      "topics_tab_id": 11,
+      "name": "More Utility Classes"
+    }
+  ]
+}
