@@ -10,38 +10,6 @@
     {
       "content": "JVM\nJVM is an acronym for Java Virtual Machine, it is an abstract machine which provides the runtime environment in which java bytecode can be executed. It is a specification.\nJVMs are available for many hardware and software platforms (so JVM is platform dependent).\nJRE\nJRE stands for Java Runtime Environment. It is the implementation of JVM.\nJDK\nJDK is an acronym for Java Development Kit. It physically exists. It contains JRE + development tools.\nUnderstanding the difference between JDK, JRE and JVM is important in Java. We are having brief overview of JVM here.\nIf you want to get the detailed knowledge of Java Virtual Machine, move to the next page. Firstly, let's see the basic differences between the JDK, JRE and JVM.\nJVM\nJVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.\nJVMs are available for many hardware and software platforms. JVM, JRE and JDK are platform dependent because configuration of each OS differs. But, Java is platform independent.\nThe JVM performs following main tasks:\nLoads code\nVerifies code\nExecutes code\nProvides runtime environment\n\nJRE\nJRE is an acronym for Java Runtime Environment.It is used to provide runtime environment.It is the implementation of JVM. It physically exists. It contains set of libraries + other files that JVM uses at runtime.\nImplementation of JVMs are also actively released by other companies besides Sun Micro Systems.\n\n\nJDK\nJDK is an acronym for Java Development Kit.It physically exists.It contains JRE + development tools.\n",
       "favorite": 0,
-      "id": 1,
-      "subTitle": "with lesson",
-      "title": " What is difference between JDK,JRE and JVM?"
-    },
-    {
-      "content": "Many types:\n1. 1. Class(Method) Area\n2. 2. Heap\n3. 3. Stack\n4. 4. Program Counter Register\n5. 5.Native Method Stack\nJVM (Java Virtual Machine)\nJVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.\nJVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).\nWhat is JVM\nIt is:\n1. A specification where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Sun and other companies.\n2. An implementation Its implementation is known as JRE (Java Runtime Environment).\n3. Runtime Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.\nWhat it does\nThe JVM performs following operation:\nLoads code\nVerifies code\nExecutes code\nProvides runtime environment\nJVM provides definitions for the:\nMemory area\nClass file format\nRegister set\nGarbage-collected heap\nFatal error reporting etc.\n\nInternal Architecture of JVM\nLet's understand the internal architecture of JVM. It contains classloader, memory area, execution engine etc.\n \n\n\n1) Classloader\nClassloader is a subsystem of JVM that is used to load class files.\n2) Class(Method) Area\nClass(Method) Area stores per-class structures such as the runtime constant pool, field and method data, the code for methods.\n3) Heap\nIt is the runtime data area in which objects are allocated.\n4) Stack\nJava Stack stores frames.It holds local variables and partial results, and plays a part in method invocation and return.\nEach thread has a private JVM stack, created at the same time as thread.\nA new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes.\n5) Program Counter Register\nPC (program counter) register. It contains the address of the Java virtual machine instruction currently being executed.\n6) Native Method Stack\nIt contains all the native methods used in the application.\n7) Execution Engine\nIt contains:\n1) A virtual processor\n2) Interpreter: Read bytecode stream then execute the instructions.\n3) Just-In-Time(JIT) compiler: It is used to improve the performance.JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.Here the term ?compiler? refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.",
-      "favorite": 0,
-      "id": 2,
-      "subTitle": "with lesson",
-      "title": " How many types of memory areas are allocated by JVM?"
-    },
-    {
-      "content": "Just-In-Time(JIT) compiler:It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.Here the term \"compiler\" refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.",
-      "favorite": 0,
-      "id": 3,
-      "subTitle": "",
-      "title": "What is JIT compiler?"
-    }
-  ]
-}
-{
-  "topics": [
-    {
-      "content": " Yes Java is a platform independent language. We can write java code on one platform and run it on another platform. For e.g. we can write and compile the code on windows and can run it on Linux or any other supported platform. This is one of the main features of java.",
-      "favorite": 1,
-      "id": 1,
-      "subTitle": "",
-      "title": "Is Java platform independent?"
-    },
-    {
-      "content": "JVM\nJVM is an acronym for Java Virtual Machine, it is an abstract machine which provides the runtime environment in which java bytecode can be executed. It is a specification.\nJVMs are available for many hardware and software platforms (so JVM is platform dependent).\nJRE\nJRE stands for Java Runtime Environment. It is the implementation of JVM.\nJDK\nJDK is an acronym for Java Development Kit. It physically exists. It contains JRE + development tools.\nUnderstanding the difference between JDK, JRE and JVM is important in Java. We are having brief overview of JVM here.\nIf you want to get the detailed knowledge of Java Virtual Machine, move to the next page. Firstly, let's see the basic differences between the JDK, JRE and JVM.\nJVM\nJVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.\nJVMs are available for many hardware and software platforms. JVM, JRE and JDK are platform dependent because configuration of each OS differs. But, Java is platform independent.\nThe JVM performs following main tasks:\nLoads code\nVerifies code\nExecutes code\nProvides runtime environment\n\nJRE\nJRE is an acronym for Java Runtime Environment.It is used to provide runtime environment.It is the implementation of JVM. It physically exists. It contains set of libraries + other files that JVM uses at runtime.\nImplementation of JVMs are also actively released by other companies besides Sun Micro Systems.\n\n\nJDK\nJDK is an acronym for Java Development Kit.It physically exists.It contains JRE + development tools.\n",
-      "favorite": 0,
       "id": 2,
       "subTitle": "with lesson",
       "title": " What is difference between JDK,JRE and JVM?"
