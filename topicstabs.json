@@ -6,6 +6,14 @@
     },
     {
       "topics_tab_id": 2,
+      "name": "CONTROL STATMENTS"
+    },
+    {
+      "topics_tab_id": 3,
+      "name": "STRINGS"
+    },
+    {
+      "topics_tab_id": 4,
       "name": "OOP"
     }
   ]
