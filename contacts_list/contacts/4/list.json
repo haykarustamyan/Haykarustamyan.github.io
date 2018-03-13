@@ -1,0 +1,144 @@
+{
+  "topics": [
+    {
+      "content": "• Inheritance\n• Polymorphism\n• Data Encapsulation\n• Abstraction",
+      "favorite": 0,
+      "id": 0,
+      "subTitle": "",
+      "title": "Four main principles of OOPS language?"
+    },
+    {
+      "content": "Operator overloading is not supported in Java.",
+      "favorite": 1,
+      "id": 1,
+      "subTitle": "",
+      "title": "Does Java support operator overloading?"
+    },
+    {
+      "content": "The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. void setSSN(int ssn))and read (for e.g.  int getSSN()) the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as data hiding. Lets see an example to understand this concept better.\npublic class EncapsulationDemo{\n    private int ssn;\n    private String empName;\n    private int empAge;\n    //Getter and Setter methods\n    public int getEmpSSN(){\n        return ssn;\n    }\n    public String getEmpName(){\n        return empName;\n    }\n    public int getEmpAge(){\n        return empAge;\n    }\n    public void setEmpAge(int newValue){\n        empAge = newValue;\n    }\n    public void setEmpName(String newValue){\n        empName = newValue;\n    }\n    public void setEmpSSN(int newValue){\n        ssn = newValue;\n    }\n}\npublic class EncapsTest{\n    public static void main(String args[]){\n         EncapsulationDemo obj = new EncapsulationDemo();\n         obj.setEmpName(\"Mario\");\n         obj.setEmpAge(32);\n         obj.setEmpSSN(112233);\n         System.out.println(\"Employee Name: \" + obj.getEmpName());\n         System.out.println(\"Employee SSN: \" + obj.getEmpSSN());\n         System.out.println(\"Employee Age: \" + obj.getEmpAge());\n    } \n}\nOutput:\nEmployee Name: Mario\nEmployee SSN: 112233\nEmployee Age: 32\nIn above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, ssn and empAge are made hidden data fields using encapsulation technique of OOPs.\nAdvantages of encapsulation:\nIt improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and String getEmpName() can be changed at any point of time. Since the implementation is purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()). Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.\nThe fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). For e.g. If we have a field(or variable) which doesn’t need to change at any cost then we simply define the variable as private and instead of set and get both we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.\nUser would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.\nEncapsulation is also known as “data Hiding”.\n1. Objects encapsulate data and implementation details. To the outside world, an object is a black box that exhibits a certain behavior.\n2. The behavior of this object is what which is useful for the external world or other objects.\n3. An object exposes its behavior by means of public methods or functions.\n4. The set of functions an object exposes to other objects or external world acts as the interface of the object.",
+      "favorite": 0,
+      "id": 2,
+      "subTitle": "with lesson",
+      "title": "What is Encapsulation?"
+    },
+    {
+      "content": "Object based programming languages follow all the features of OOPs except Inheritance.\n Examples of object based programming languages are JavaScript, VBScript etc.",
+      "favorite": 0,
+      "id": 3,
+      "subTitle": "",
+      "title": "What is difference between object oriented programming language and object based programming language?"
+    },
+    {
+      "content": "• Inheritance\n• Polymorphism\n• Data Encapsulation\n• Abstraction",
+      "favorite": 0,
+      "id": 4,
+      "subTitle": "",
+      "title": "Four main principles of OOPS language?"
+    },
+    {
+      "content": "Operator overloading is not supported in Java.",
+      "favorite": 1,
+      "id": 5,
+      "subTitle": "",
+      "title": "Does Java support operator overloading?"
+    },
+    {
+      "content": "The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. void setSSN(int ssn))and read (for e.g.  int getSSN()) the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as data hiding. Lets see an example to understand this concept better.\npublic class EncapsulationDemo{\n    private int ssn;\n    private String empName;\n    private int empAge;\n    //Getter and Setter methods\n    public int getEmpSSN(){\n        return ssn;\n    }\n    public String getEmpName(){\n        return empName;\n    }\n    public int getEmpAge(){\n        return empAge;\n    }\n    public void setEmpAge(int newValue){\n        empAge = newValue;\n    }\n    public void setEmpName(String newValue){\n        empName = newValue;\n    }\n    public void setEmpSSN(int newValue){\n        ssn = newValue;\n    }\n}\npublic class EncapsTest{\n    public static void main(String args[]){\n         EncapsulationDemo obj = new EncapsulationDemo();\n         obj.setEmpName(\"Mario\");\n         obj.setEmpAge(32);\n         obj.setEmpSSN(112233);\n         System.out.println(\"Employee Name: \" + obj.getEmpName());\n         System.out.println(\"Employee SSN: \" + obj.getEmpSSN());\n         System.out.println(\"Employee Age: \" + obj.getEmpAge());\n    } \n}\nOutput:\nEmployee Name: Mario\nEmployee SSN: 112233\nEmployee Age: 32\nIn above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, ssn and empAge are made hidden data fields using encapsulation technique of OOPs.\nAdvantages of encapsulation:\nIt improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and String getEmpName() can be changed at any point of time. Since the implementation is purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()). Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.\nThe fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). For e.g. If we have a field(or variable) which doesn’t need to change at any cost then we simply define the variable as private and instead of set and get both we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.\nUser would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.\nEncapsulation is also known as “data Hiding”.\n1. Objects encapsulate data and implementation details. To the outside world, an object is a black box that exhibits a certain behavior.\n2. The behavior of this object is what which is useful for the external world or other objects.\n3. An object exposes its behavior by means of public methods or functions.\n4. The set of functions an object exposes to other objects or external world acts as the interface of the object.",
+      "favorite": 0,
+      "id": 6,
+      "subTitle": "with lesson",
+      "title": "What is Encapsulation?"
+    },
+    {
+      "content": "Object based programming languages follow all the features of OOPs except Inheritance.\n Examples of object based programming languages are JavaScript, VBScript etc.",
+      "favorite": 0,
+      "id": 7,
+      "subTitle": "",
+      "title": "What is difference between object oriented programming language and object based programming language?"
+    },
+    {
+      "content": "• Inheritance\n• Polymorphism\n• Data Encapsulation\n• Abstraction",
+      "favorite": 0,
+      "id": 8,
+      "subTitle": "",
+      "title": "Four main principles of OOPS language?"
+    },
+    {
+      "content": "Operator overloading is not supported in Java.",
+      "favorite": 1,
+      "id": 9,
+      "subTitle": "",
+      "title": "Does Java support operator overloading?"
+    },
+    {
+      "content": "The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. void setSSN(int ssn))and read (for e.g.  int getSSN()) the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as data hiding. Lets see an example to understand this concept better.\npublic class EncapsulationDemo{\n    private int ssn;\n    private String empName;\n    private int empAge;\n    //Getter and Setter methods\n    public int getEmpSSN(){\n        return ssn;\n    }\n    public String getEmpName(){\n        return empName;\n    }\n    public int getEmpAge(){\n        return empAge;\n    }\n    public void setEmpAge(int newValue){\n        empAge = newValue;\n    }\n    public void setEmpName(String newValue){\n        empName = newValue;\n    }\n    public void setEmpSSN(int newValue){\n        ssn = newValue;\n    }\n}\npublic class EncapsTest{\n    public static void main(String args[]){\n         EncapsulationDemo obj = new EncapsulationDemo();\n         obj.setEmpName(\"Mario\");\n         obj.setEmpAge(32);\n         obj.setEmpSSN(112233);\n         System.out.println(\"Employee Name: \" + obj.getEmpName());\n         System.out.println(\"Employee SSN: \" + obj.getEmpSSN());\n         System.out.println(\"Employee Age: \" + obj.getEmpAge());\n    } \n}\nOutput:\nEmployee Name: Mario\nEmployee SSN: 112233\nEmployee Age: 32\nIn above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, ssn and empAge are made hidden data fields using encapsulation technique of OOPs.\nAdvantages of encapsulation:\nIt improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and String getEmpName() can be changed at any point of time. Since the implementation is purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()). Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.\nThe fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). For e.g. If we have a field(or variable) which doesn’t need to change at any cost then we simply define the variable as private and instead of set and get both we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.\nUser would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.\nEncapsulation is also known as “data Hiding”.\n1. Objects encapsulate data and implementation details. To the outside world, an object is a black box that exhibits a certain behavior.\n2. The behavior of this object is what which is useful for the external world or other objects.\n3. An object exposes its behavior by means of public methods or functions.\n4. The set of functions an object exposes to other objects or external world acts as the interface of the object.",
+      "favorite": 0,
+      "id": 10,
+      "subTitle": "with lesson",
+      "title": "What is Encapsulation?"
+    },
+    {
+      "content": "Object based programming languages follow all the features of OOPs except Inheritance.\n Examples of object based programming languages are JavaScript, VBScript etc.",
+      "favorite": 0,
+      "id": 11,
+      "subTitle": "",
+      "title": "What is difference between object oriented programming language and object based programming language?"
+    },
+    {
+      "content": "• Inheritance\n• Polymorphism\n• Data Encapsulation\n• Abstraction",
+      "favorite": 0,
+      "id": 12,
+      "subTitle": "",
+      "title": "Four main principles of OOPS language?"
+    },
+    {
+      "content": "Operator overloading is not supported in Java.",
+      "favorite": 1,
+      "id": 13,
+      "subTitle": "",
+      "title": "Does Java support operator overloading?"
+    },
+    {
+      "content": "The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. void setSSN(int ssn))and read (for e.g.  int getSSN()) the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as data hiding. Lets see an example to understand this concept better.\npublic class EncapsulationDemo{\n    private int ssn;\n    private String empName;\n    private int empAge;\n    //Getter and Setter methods\n    public int getEmpSSN(){\n        return ssn;\n    }\n    public String getEmpName(){\n        return empName;\n    }\n    public int getEmpAge(){\n        return empAge;\n    }\n    public void setEmpAge(int newValue){\n        empAge = newValue;\n    }\n    public void setEmpName(String newValue){\n        empName = newValue;\n    }\n    public void setEmpSSN(int newValue){\n        ssn = newValue;\n    }\n}\npublic class EncapsTest{\n    public static void main(String args[]){\n         EncapsulationDemo obj = new EncapsulationDemo();\n         obj.setEmpName(\"Mario\");\n         obj.setEmpAge(32);\n         obj.setEmpSSN(112233);\n         System.out.println(\"Employee Name: \" + obj.getEmpName());\n         System.out.println(\"Employee SSN: \" + obj.getEmpSSN());\n         System.out.println(\"Employee Age: \" + obj.getEmpAge());\n    } \n}\nOutput:\nEmployee Name: Mario\nEmployee SSN: 112233\nEmployee Age: 32\nIn above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, ssn and empAge are made hidden data fields using encapsulation technique of OOPs.\nAdvantages of encapsulation:\nIt improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and String getEmpName() can be changed at any point of time. Since the implementation is purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()). Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.\nThe fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). For e.g. If we have a field(or variable) which doesn’t need to change at any cost then we simply define the variable as private and instead of set and get both we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.\nUser would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.\nEncapsulation is also known as “data Hiding”.\n1. Objects encapsulate data and implementation details. To the outside world, an object is a black box that exhibits a certain behavior.\n2. The behavior of this object is what which is useful for the external world or other objects.\n3. An object exposes its behavior by means of public methods or functions.\n4. The set of functions an object exposes to other objects or external world acts as the interface of the object.",
+      "favorite": 0,
+      "id": 14,
+      "subTitle": "with lesson",
+      "title": "What is Encapsulation?"
+    },
+    {
+      "content": "Object based programming languages follow all the features of OOPs except Inheritance.\n Examples of object based programming languages are JavaScript, VBScript etc.",
+      "favorite": 0,
+      "id": 15,
+      "subTitle": "",
+      "title": "What is difference between object oriented programming language and object based programming language?"
+    },
+    {
+      "content": "• Inheritance\n• Polymorphism\n• Data Encapsulation\n• Abstraction",
+      "favorite": 0,
+      "id": 16,
+      "subTitle": "",
+      "title": "Four main principles of OOPS language?"
+    },
+    {
+      "content": "Operator overloading is not supported in Java.",
+      "favorite": 1,
+      "id": 17,
+      "subTitle": "",
+      "title": "Does Java support operator overloading?"
+    },
+    {
+      "content": "The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. void setSSN(int ssn))and read (for e.g.  int getSSN()) the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as data hiding. Lets see an example to understand this concept better.\npublic class EncapsulationDemo{\n    private int ssn;\n    private String empName;\n    private int empAge;\n    //Getter and Setter methods\n    public int getEmpSSN(){\n        return ssn;\n    }\n    public String getEmpName(){\n        return empName;\n    }\n    public int getEmpAge(){\n        return empAge;\n    }\n    public void setEmpAge(int newValue){\n        empAge = newValue;\n    }\n    public void setEmpName(String newValue){\n        empName = newValue;\n    }\n    public void setEmpSSN(int newValue){\n        ssn = newValue;\n    }\n}\npublic class EncapsTest{\n    public static void main(String args[]){\n         EncapsulationDemo obj = new EncapsulationDemo();\n         obj.setEmpName(\"Mario\");\n         obj.setEmpAge(32);\n         obj.setEmpSSN(112233);\n         System.out.println(\"Employee Name: \" + obj.getEmpName());\n         System.out.println(\"Employee SSN: \" + obj.getEmpSSN());\n         System.out.println(\"Employee Age: \" + obj.getEmpAge());\n    } \n}\nOutput:\nEmployee Name: Mario\nEmployee SSN: 112233\nEmployee Age: 32\nIn above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, ssn and empAge are made hidden data fields using encapsulation technique of OOPs.\nAdvantages of encapsulation:\nIt improves maintainability and flexibility and re-usability: for e.g. In the above code the implementation code of void setEmpName(String name) and String getEmpName() can be changed at any point of time. Since the implementation is purely hidden for outside classes they would still be accessing the private field empName using the same methods (setEmpName(String name) and getEmpName()). Hence the code can be maintained at any point of time without breaking the classes that uses the code. This improves the re-usability of the underlying class.\nThe fields can be made read-only (If we don’t define setter methods in the class) or write-only (If we don’t define the getter methods in the class). For e.g. If we have a field(or variable) which doesn’t need to change at any cost then we simply define the variable as private and instead of set and get both we just need to define the get method for that variable. Since the set method is not present there is no way an outside class can modify the value of that field.\nUser would not be knowing what is going on behind the scene. They would only be knowing that to update a field call set method and to read a field call get method but what these set and get methods are doing is purely hidden from them.\nEncapsulation is also known as “data Hiding”.\n1. Objects encapsulate data and implementation details. To the outside world, an object is a black box that exhibits a certain behavior.\n2. The behavior of this object is what which is useful for the external world or other objects.\n3. An object exposes its behavior by means of public methods or functions.\n4. The set of functions an object exposes to other objects or external world acts as the interface of the object.",
+      "favorite": 0,
+      "id": 18,
+      "subTitle": "with lesson",
+      "title": "What is Encapsulation?"
+    },
+    {
+      "content": "Object based programming languages follow all the features of OOPs except Inheritance.\n Examples of object based programming languages are JavaScript, VBScript etc.",
+      "favorite": 0,
+      "id": 19,
+      "subTitle": "",
+      "title": "What is difference between object oriented programming language and object based programming language?"
+    }
+  ]
+}
