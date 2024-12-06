@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID": "Q3G4Z2FHGX.am.app110places.hikingclub.Places110KMP",
+                "paths": [ "/create_account*" ]
+            }
+        ]
+    }
+}
